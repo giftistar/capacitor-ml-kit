@@ -1,6 +1,6 @@
 {
   "name": "capacitor-ml-kit-giftistar",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "mlkit",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
