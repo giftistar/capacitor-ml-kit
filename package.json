@@ -41,7 +41,8 @@
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "npm i && npm run prepublishOnly && np --any-branch --no-tests && echo 'done'"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
@@ -57,7 +58,8 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "np": "^7.4.0"
   },
   "peerDependencies": {
     "@capacitor/core": "^4.0.0"
