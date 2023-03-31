@@ -42,7 +42,7 @@ public class CapacitorMLKit {
     }
 
     public String ocr(String image_uri, PluginCall call) {
-        Log.i("ocr", "ocr image_uri:" + image_uri);
+
         try {
             if (recognizer == null) {
                 recognizer = TextRecognition.getClient(new KoreanTextRecognizerOptions.Builder().build());
@@ -62,7 +62,7 @@ public class CapacitorMLKit {
                 @Override
                 public void onComplete(@NonNull Task<Text> task) {
                     JSObject ret = new JSObject();
-                    Log.i("ocr", "onComplete task.getResult():" + task.getResult());
+
                     if (task.getResult() != null && task.getResult().getText() != null) {
                         Log.i("ocr", "onComplete task.getResult() text:" + task.getResult().getText());
                         ret.put("value", task.getResult().getText());
@@ -97,7 +97,7 @@ public class CapacitorMLKit {
     }
 
     public String barcode(String image_uri, PluginCall call) {
-        Log.i("image_uri", "barcode image_uri:" + image_uri);
+
         try {
             if (barcodeScanner == null) {
                 barcodeScanner = BarcodeScanning.getClient();
