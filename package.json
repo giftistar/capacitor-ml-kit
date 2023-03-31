@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-ml-kit",
+  "name": "capacitor-ml-kit-giftistar",
   "version": "0.1.1",
   "description": "mlkit",
   "main": "dist/plugin.cjs.js",
@@ -42,7 +42,8 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "release": "npm i && npm run prepublishOnly && np --any-branch --no-tests && echo 'done'"
+    "release": "npm i && npm run prepublishOnly && np --any-branch --no-tests && echo 'done'",
+    "np": "np --any-branch --no-tests && echo 'done'"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
