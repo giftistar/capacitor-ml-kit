@@ -43,7 +43,8 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
     "release": "npm i && npm run prepublishOnly && np --any-branch --no-tests && echo 'done'",
-    "np": "np --any-branch --no-tests && echo 'done'"
+    "np": "np --any-branch --no-tests && echo 'done'",
+    "git": "git config --list"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
