@@ -1,6 +1,6 @@
 {
   "name": "capacitor-ml-kit-giftistar",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "description": "mlkit",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/giftistar/capacitor-ml-kit"
+    "url": "git+https://github.com/giftistar/capacitor-ml-kit.git"
   },
   "bugs": {
     "url": "https://github.com/giftistar/capacitor-ml-kit/issues"
